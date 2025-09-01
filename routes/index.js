@@ -8,6 +8,7 @@ router.get("/health", (req, res) => {
     message: "Server is running",
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
+    port: process.env.PORT,
   });
 });
 
